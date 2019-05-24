@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/log_l"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/log_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:background="@color/colorPrimary"/>
+
+    <ProgressBar
+        android:id="@+id/log_pbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/prog_box"
+        android:minWidth="250dp"
+        android:minHeight="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/log_lay"
+        app:layout_constraintStart_toStartOf="@id/log_lay"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="15dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/log_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/log_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:layout_marginStart="@dimen/margin_side"
+            android:layout_marginEnd="@dimen/margin_side"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/customTextColor"
+            android:background="@drawable/input_box"
+            android:elevation="8dp"/>
+
+        <EditText
+            android:id="@+id/log_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/password"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="@dimen/margin_side"
+            android:layout_marginEnd="@dimen/margin_side"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/customTextColor"
+            android:inputType="textPassword"
+            android:background="@drawable/input_box"
+            android:elevation="8dp"/>
+
+        <Button
+            android:id="@+id/log_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="@dimen/margin_side"
+            android:layout_marginEnd="@dimen/margin_side"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="@string/login"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:textColor="@color/btn_text_color"
+            android:elevation="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/not_registered"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/go_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/register"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

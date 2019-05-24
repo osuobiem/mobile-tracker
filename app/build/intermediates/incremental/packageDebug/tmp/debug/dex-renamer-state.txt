@@ -1,0 +1,7 @@
+#Mon Apr 29 01:49:33 WAT 2019
+base.0=/home/gr33n/MobileTracker/app/build/intermediates/transforms/dexMerger/debug/1
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/home/gr33n/MobileTracker/app/build/intermediates/transforms/dexMerger/debug/0

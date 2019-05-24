@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0e8b7e</color>
+    <color name="colorPrimaryDark">#06685e</color>
+    <color name="colorAccent">#059c8c</color>
+    <color name="colorAccentT">#ae059c8c</color>
+    <color name="btn_text_color">#ffffff</color>
+    <color name="button_grey">#677874</color>
+    <color name="customTextColor">#000000</color>
+    <color name="transWColor">#c9f9fafa</color>
+    <color name="progBoxColor">#deffffff</color>
+    <color name="trans">#00ffffff</color>
+    <color name="badSnack">#edc91d1d</color>
+    <color name="goodSnack">#ed06b112</color>
+    <color name="popup">#dfffffff</color>
+</resources>

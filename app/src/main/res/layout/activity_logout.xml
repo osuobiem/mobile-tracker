@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/logout_l"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.LogoutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/logout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:background="@color/colorPrimary"/>
+
+    <ProgressBar
+        android:id="@+id/logout_pbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/prog_box"
+        android:minWidth="250dp"
+        android:minHeight="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/logout_lay"
+        app:layout_constraintStart_toStartOf="@id/logout_lay"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="15dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/logout_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/logout_l_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:hint="Device L-Code"
+            android:layout_marginStart="@dimen/margin_side"
+            android:layout_marginEnd="@dimen/margin_side"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/customTextColor"
+            android:elevation="8dp"
+            android:background="@drawable/input_box"/>
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="@dimen/margin_side"
+            android:layout_marginEnd="@dimen/margin_side"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="@string/logout"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:elevation="12dp"
+            android:textColor="@color/btn_text_color"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,4 @@
+#Wed Apr 24 17:58:09 CEST 2019
+base.0=C\:\\Users\\ugocity\\AndroidStudioProjects\\MobileTracker\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+path.0=classes.dex
+renamed.0=classes.dex
